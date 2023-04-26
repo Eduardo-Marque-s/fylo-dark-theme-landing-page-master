@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=DM+Sans:wght@400;700&family=Dancing+Script:wght@500&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400;700;900&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Ms+Madi&family=Noto+Sans+JP:wght@100&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=DM+Sans:wght@400;700&family=Dancing+Script:wght@500&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400;700;900&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Ms+Madi&family=Noto+Sans+JP:wght@100&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    /* Primary*/
+    --Dark-Blue: hsl(217, 28%, 15%);
+    /*(intro and email sign up background)*/
+    --Dark-Blue: hsl(218, 28%, 13%);
+    /*(main background)*/
+    --Dark-Blue: hsl(216, 53%, 9%);
+    /*(footer background)*/
+    --Dark-Blue: hsl(219, 30%, 18%);
+    /*(testimonials background)*/
+
+    /*Accent*/
+    --Cyan: hsl(176, 68%, 64%);
+    /*(inside call-to-action gradient)*/
+    --Blue: hsl(198, 60%, 50%);
+    /* (inside call-to-action gradient)*/
+    --Light-Red: hsl(0, 100%, 63%)
+        /*(error)*/
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    color: white;
+}
+
+body {
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 190% 95%;
+    background-position: 40% 72%;
+    background-color: hsl(217, 28%, 15%);
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 90%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.nav ul {
+    gap: 50px;
+    display: flex;
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav li:hover {
+    text-decoration: 2px underline hsl(176, 68%, 64%);
+}
+
+.primeiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+.primeiro h1 {
+    font-size: 40px;
+    margin-top: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.primeiro p {
+    width: 600px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 100;
+}
+
+.primeiro button {
+    width: 39%;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    margin-top: 80px;
+    border-radius: 30px;
+    background-color: hsl(176, 68%, 64%);
+}
+
+.access-security,
+.real-store {
+    display: flex;
+    margin-top: 150px;
+    text-align: center;
+    gap: 150px;
+    justify-content: center;
+}
+
+.segundo-title {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.segundo-text {
+    width: 25rem;
+    margin-top: 10px;
+}
+
+.segundo-title-one {
+    margin-top: 20px;
+}
+
+.segundo-title-two {
+    margin-top: 36px;
+}
+
+.stay {
+    gap: 50px;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stay-productive h1 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.stay-productive p {
+    width: 33rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.stay-productive span,
+a {
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.info {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg-quotes {
+    position: absolute;
+    top: 738px;
+    left: -10px;
+    z-index: 1;
+}
+
+.info-um {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    height: 200px;
+    padding: 1.5rem 2rem;
+    margin-top: 180px;
+    border-radius: 5px;
+    background-color: hsl(217, 28%, 15%);
+    box-shadow: 8px 8px 25px rgb(17, 17, 17);
+}
+
+.info-um p {
+    font-size: 16px;
+}
+
+.image img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.image {
+    gap: 10px;
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.image-info h3 {
+    font-size: 15px;
+    color: white;
+}
+
+.image-info span {
+    color: white;
+    font-size: 11px;
+}
+
+.terceiro {
+    position: relative;
+}
+
+
+.quarto-footer {
+    width: 865px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.5rem 3rem;
+    position: absolute;
+    top: 120%;
+    left: 230px;
+    background-color: hsl(217, 28%, 15%);
+    box-shadow: 8px 8px 25px black;
+}
+
+.quarto-footer h1 {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.quarto-footer p {
+    margin-top: 20px;
+}
+
+.quarto-footer #email-input {
+    width: 31rem;
+    height: 50px;
+    gap: 15px;
+    border: none;
+    margin-top: 35px;
+    padding-left: 30px;
+    border-radius: 30px;
+}
+
+#email-error {
+    margin-top: 5px;
+    padding-right: 50%;
+}
+
+.quarto-footer button {
+    width: 13rem;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-top: 35px;
+    border-radius: 30px;
+    background-color: hsl(176, 68%, 64%);
+}
+
+.input-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: hsl(217, 28%, 15%);
+    font-weight: 600;
+    background-color: rgb(146, 190, 185);
+}
+
+/*footer*/
+
+footer {
+    width: 99.35vw;
+    height: 515px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 350px;
+    background-color: hsl(216, 53%, 9%);
+}
+
+.fylo {
+    width: 15%;
+}
+
+.fylo-zero {
+    width: 195px;
+    height: 100px;
+}
+
+.fylo-um {
+    gap: 25px;
+    width: 160%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.fylo-um img {
+    width: 15px;
+    height: 20px;
+    margin-bottom: 40px;
+}
+
+.phone-email {
+    gap: 20px;
+    color: white;
+    margin-top: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone,
+.email {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-footer {
+    margin-top: 175px;
+}
+
+.menu-footer-two {
+    margin-top: 130px;
+}
+
+.menu-footer,
+ul,
+li,
+a {
+    color: white;
+    line-height: 2.5;
+    list-style: none;
+    text-decoration: none;
+}
+
+.icon {
+
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.icon li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.icon li:hover {
+    border: 1px solid hsl(176, 68%, 64%);
+}
+
+.menu-footer li:hover {
+    text-decoration: 2px underline hsl(176, 68%, 64%);
+}
+
+.menu-footer-two li:hover {
+    text-decoration: 2px underline hsl(176, 68%, 64%);
+}
+
+@media (max-width: 1380px) {
+    .page-wrapper {
+        width: 100%;
+    }
+
+    .primeiro img {
+        width: 70%;
+    }
+
+    .primeiro h1 {
+        width: 50%;
+    }
+
+    .primeiro p {
+        width: 50%;
+    }
+
+    .primeiro button {
+        margin-top: 20%;
+        width: 50%;
+    }
+
+    .access-security,
+    .real-store {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .stay {
+        flex-direction: column;
+    }
+
+    .stay .stay-img {
+        width: 30%;
+    }
+
+    .stay-productive h1 {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 90px;
+
+    }
+
+    .bg-quotes {
+        position: absolute;
+        top: 810px;
+        left: 450px;
+        z-index: 1;
+    }
+
+    .info-um {
+        position: relative;
+        z-index: 2;
+        width: 400px;
+        height: 200px;
+        padding: 1.5rem 2rem;
+        margin-top: 50px;
+        border-radius: 5px;
+        background-color: hsl(217, 28%, 15%);
+        box-shadow: 8px 8px 25px rgb(17, 17, 17);
+    }
+
+    .quarto-footer {
+        width: 30%;
+        height: 490px;
+        top: 100%;
+        left: 455px;
+        margin-top: 30px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .input-button {
+        flex-direction: column;
+    }
+
+    .quarto-footer #email-input {
+        width: 100%;
+        height: 50px;
+        gap: 15px;
+        border: none;
+        margin-top: 35px;
+        padding-left: 30px;
+        border-radius: 30px;
+    }
+
+    #email-error {
+        width: 100%;
+        top: 77%;
+        left: 0%;
+        padding-right: 0%;
+        position: absolute;
+    }
+
+    .quarto-footer button {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        margin-top: 20px;
+        border-radius: 30px;
+        background-color: hsl(176, 68%, 64%);
+    }
+
+    footer {
+        width: 100%;
+        height: 500%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .fylo,
+    .phone-email,
+    .menu-footer,
+    .menu-footer-two {
+        margin-top: 45px;
+        width: 44%;
+        display: flex;
+        align-items: start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icon {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .nav ul {
+        flex-direction: column;
+        margin-top: 35px;
+        gap: 0;
+
+    }
+
+    .primeiro button {
+        margin-top: 80%;
+        width: 50%;
+    }
+
+    .stay-productive {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .stay-productive p {
+        width: 20%;
+    }
+
+    .bg-quotes {
+        position: absolute;
+        top: 910px;
+        left: 450px;
+        z-index: 1;
+    }
+
+}
